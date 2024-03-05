@@ -1,7 +1,8 @@
 use lifetimes::{format_string, largest_string};
+use string_manipulation::{convert_and_ordering, convert_to_numbers};
 
-mod asynchronous;
 mod lifetimes;
+mod string_manipulation;
 
 fn main() {
     //lifetimes
@@ -21,4 +22,12 @@ fn main() {
     println!("{}", lagerst_str);
     println!("Format string: {}", format_str_string);
     //end lifetimes
+
+    //string_manipulation
+    let nums = "30 50 40 20 10";
+    let vec_nums = convert_to_numbers(nums);
+    let ordened_nums = convert_and_ordering(nums);
+    println!("vec: {:?}", vec_nums);
+    println!("orddened_vec: {:?}", ordened_nums);
+    //end string_manipulation
 }
