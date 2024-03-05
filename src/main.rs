@@ -3,6 +3,7 @@ use string_manipulation::{convert_and_ordering, convert_to_numbers};
 
 mod lifetimes;
 mod string_manipulation;
+mod traits;
 
 fn main() {
     //lifetimes
@@ -30,4 +31,8 @@ fn main() {
     println!("vec: {:?}", vec_nums);
     println!("orddened_vec: {:?}", ordened_nums);
     //end string_manipulation
+
+    //trait
+
+    //end trait
 }
