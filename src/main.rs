@@ -1,8 +1,11 @@
 use lifetimes::{format_string, largest_string};
 use string_manipulation::{convert_and_ordering, convert_to_numbers};
+use structs::UserTest;
+use traits::Test;
 
 mod lifetimes;
 mod string_manipulation;
+mod structs;
 mod traits;
 
 fn main() {
@@ -32,7 +35,8 @@ fn main() {
     println!("orddened_vec: {:?}", ordened_nums);
     //end string_manipulation
 
-    //trait
-
-    //end trait
+    //trait and structs
+    let user = UserTest::new("Enzo", 24);
+    Test::print_test(&user);
+    //end trait and structs
 }
