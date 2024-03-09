@@ -13,6 +13,7 @@ impl<'a> UserTest<'a> {
 
 impl<'a> Test for UserTest<'a> {
     fn print_test(&self) -> &str {
+        println!("Name: {}", self.name);
         self.name
     }
 }
