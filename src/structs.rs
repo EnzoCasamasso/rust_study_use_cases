@@ -1,5 +1,6 @@
 use crate::traits::Test;
 
+//i need to use lifecicle here 'cause i'm using &str
 pub struct UserTest<'a> {
     pub name: &'a str,
     pub age: i32,

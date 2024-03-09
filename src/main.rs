@@ -14,6 +14,7 @@ fn main() {
     let format_str_string: String;
     let a_string = String::from("One string");
     let b_string = String::from("Another string");
+    //begin inner escope
     {
         let string_one = String::from("Hello");
         let string_two = String::from("World!");
@@ -22,7 +23,8 @@ fn main() {
         lagerst_str = largest_string(&a_string, &b_string);
         //Here the value is not returning lifetime str
         format_str_string = format_string(&string_one, &string_two);
-    }
+    } //the variables inside inner escope will be cleaned here
+      //end inner scope
     println!("{}", lagerst_str);
     println!("Format string: {}", format_str_string);
     //end lifetimes
