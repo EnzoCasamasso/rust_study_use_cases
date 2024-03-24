@@ -1,9 +1,11 @@
 use lifetimes::{format_string, largest_string};
+use recoverable_erros::get_my_name;
 use string_manipulation::{convert_and_ordering, convert_to_numbers};
 use structs::UserTest;
 use traits::Test;
 
 mod lifetimes;
+mod recoverable_erros;
 mod string_manipulation;
 mod structs;
 mod traits;
@@ -41,4 +43,9 @@ fn main() {
     let user = UserTest::new("Enzo", 24);
     Test::print_test(&user);
     //end trait and structs
+
+    //recoverable_Errors
+    let name = get_my_name(String::from("Enzo"));
+    println!("{:?}", name);
+    //end recoverable_erros
 }
