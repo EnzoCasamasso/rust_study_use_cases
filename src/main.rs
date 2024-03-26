@@ -1,9 +1,11 @@
+use enums::Program;
 use lifetimes::{format_string, largest_string};
 use recoverable_erros::get_my_name;
 use string_manipulation::{convert_and_ordering, convert_to_numbers};
 use structs::UserTest;
 use traits::Test;
 
+mod enums;
 mod lifetimes;
 mod recoverable_erros;
 mod string_manipulation;
@@ -48,4 +50,11 @@ fn main() {
     let name = get_my_name(String::from("Enzo"));
     println!("{:?}", name);
     //end recoverable_erros
+
+    //enum
+    let mut version = Program::V1;
+    println!("version: {:?}", version);
+    version = Program::V2;
+    println!("version now: {:?}", version);
+    //end enums
 }
