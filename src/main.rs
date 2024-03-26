@@ -1,4 +1,4 @@
-use enums::Program;
+use enums::{IpAddress, Program};
 use lifetimes::{format_string, largest_string};
 use recoverable_erros::get_my_name;
 use string_manipulation::{convert_and_ordering, convert_to_numbers};
@@ -56,5 +56,10 @@ fn main() {
     println!("version: {:?}", version);
     version = Program::V2;
     println!("version now: {:?}", version);
+
+    let ip_addr_v4 = IpAddress::V4(String::from("127.0.0.1"));
+    let ip_addr_v8 = IpAddress::V8("192.168.0.1".to_string());
+    println!("IP V4: {:?}", ip_addr_v4);
+    println!("IP V8: {:?}", ip_addr_v8);
     //end enums
 }
