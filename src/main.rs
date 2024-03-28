@@ -4,6 +4,7 @@ use recoverable_erros::get_my_name;
 use string_manipulation::{convert_and_ordering, convert_to_numbers};
 use structs::UserTest;
 use traits::Test;
+use vectors::find_uniq;
 
 mod enums;
 mod lifetimes;
@@ -11,6 +12,7 @@ mod recoverable_erros;
 mod string_manipulation;
 mod structs;
 mod traits;
+mod vectors;
 
 fn main() {
     //lifetimes
@@ -62,4 +64,10 @@ fn main() {
     println!("IP V4: {:?}", ip_addr_v4);
     println!("IP V8: {:?}", ip_addr_v8);
     //end enums
+
+    //vector
+    let numbers = vec![1, 1, 2, 2, 3, 3, 4, 5, 5];
+    let uniq_number = find_uniq(numbers);
+    println!("uniq number: {}", uniq_number);
+    //end vector
 }
