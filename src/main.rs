@@ -1,5 +1,5 @@
 use enums::{IpAddress, Program};
-use hashmaps::createHash;
+use hashmaps::month_hash;
 use lifetimes::{format_string, largest_string};
 use recoverable_erros::get_my_name;
 use string_manipulation::{convert_and_ordering, convert_to_numbers};
@@ -75,5 +75,8 @@ fn main() {
 
     //HashMap
 
+    //Try to interate all of them
+    let months = month_hash();
+    println!("months: {:?}", months);
     //end hashmap
 }
