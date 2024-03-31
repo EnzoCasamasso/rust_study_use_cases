@@ -1,4 +1,5 @@
 use enums::{IpAddress, Program};
+use hashmaps::createHash;
 use lifetimes::{format_string, largest_string};
 use recoverable_erros::get_my_name;
 use string_manipulation::{convert_and_ordering, convert_to_numbers};
@@ -7,6 +8,7 @@ use traits::Test;
 use vectors::find_uniq;
 
 mod enums;
+mod hashmaps;
 mod lifetimes;
 mod recoverable_erros;
 mod string_manipulation;
@@ -70,4 +72,8 @@ fn main() {
     let uniq_number = find_uniq(numbers);
     println!("uniq number: {}", uniq_number);
     //end vector
+
+    //HashMap
+
+    //end hashmap
 }
