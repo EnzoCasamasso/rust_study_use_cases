@@ -75,7 +75,7 @@ fn main() {
 
     //HashMap
 
-    //Try to interate all of them
+    //Try to iterate all of them
     let months = month_hash();
     println!("months: {:?}", months);
     //end hashmap
