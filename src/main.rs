@@ -7,6 +7,7 @@ use structs::UserTest;
 use traits::Test;
 use vectors::find_uniq;
 
+mod closures;
 mod enums;
 mod hashmaps;
 mod lifetimes;
