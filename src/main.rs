@@ -80,4 +80,10 @@ fn main() {
     let months = month_hash();
     println!("months: {:?}", months);
     //end hashmap
+
+    //closures
+    let add_one = |x: i32| -> i32 { x + 1 };
+    let num = add_one(10);
+    println!("{}", num);
+    //end cloosures
 }
