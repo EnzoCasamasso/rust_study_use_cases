@@ -14,6 +14,7 @@ mod lifetimes;
 mod recoverable_erros;
 mod string_manipulation;
 mod structs;
+mod tests;
 mod traits;
 mod vectors;
 
